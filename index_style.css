@@ -1,0 +1,176 @@
+/* index_style.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: black; /* Hintergrundfarbe des gesamten Bodys */
+    color: white;
+    overflow-x: hidden; /* Verhindert horizontales Scrollen */
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center; /* Zentriert die Links in der Navbar */
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Schwarz mit Transparenz */
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+    font-size: 2pc;
+}
+
+.navbar-links a:hover {
+    color: #f0f0f0;
+}
+
+.text-container {
+    position: fixed;
+    top: 70%;
+    right: 5px;
+    transform: translateY(-50%);
+    height: 3pc;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.7); /* Weiß mit Transparenz */
+    padding: 10px;
+    text-align: right;
+    z-index: 1000;
+    transition: all 0.5s;
+}
+
+.text-container h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.background-image {
+    width: 126pc; /* Bild passt sich der Breite des Bildschirms an */
+    height: auto;
+    display: block;
+    position: relative;
+    margin-top: -25.4pc;
+    margin-left: -25pc;
+}
+
+.content {
+    text-align: center;
+    padding-top: 70px; /* Platz für die Navbar */
+    margin-bottom: 15%; /* Platz für Scrollen */
+}
+
+.image-container {
+    position: relative;
+    margin-bottom: 15%; /* Platz für Scrollen */
+}
+
+.text-section {
+    padding: 20px;
+    background-color: black;
+    position: relative;
+}
+
+p {
+    font-size: 5pc;
+}
+h1{
+    margin-left: 90pc;
+}
+.gallery {
+	position: absolute;
+	margin-top: -30pc;
+    margin-left: 50pc;
+	background: none;
+	border: none;
+}
+
+.gallery figure {
+	position: absolute;
+	display: inline-block;
+	top: 0;
+	left: 2em;
+	z-index: 1;
+	animation: wechseln 15s infinite;
+}
+
+.gallery figure:last-of-type {
+	position: relative;
+}
+
+.gallery > figure figcaption {
+	position: absolute;
+	left: 1em;
+	font-size: 2em;
+	font-weight: bold;
+	bottom: 0.5em;
+	z-index: 2;
+	color: white;
+}
+
+@keyframes wechseln {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	60% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.gallery figure:nth-of-type(2) {
+	animation-delay: 5s;
+	opacity: 0;
+}
+
+.gallery figure:nth-of-type(3) {
+	animation-delay: 10s;
+	opacity: 0;
+}
+.AnimationButton{
+    position: relative;
+    background-color: #ffffff9a;
+    border-color: #000;
+    margin-top: -50pc;
+    font-size: 2pc;
+    width: 15pc;
+    height: 3.5pc;
+    border-radius: 1.7pc;
+}
+.AnimationText{
+    margin-top: 7px;
+    background-color: none;
+    font-size: 2pc;
+}
+.EinleitungBilder{
+    position: relative;
+    width: 45%;
+    height: 35%;
+    margin-left: 9pc;
+    margin-top: 12pc;
+}
+.EinleitungFormen{
+    position: absolute;
+    width: 45%;
+    height: 27pc;
+    margin-left: 7pc;
+    margin-top: 10pc;
+    background-color: #eaeaea;
+}
